@@ -9,7 +9,7 @@ This is a simple implementation of a HashMap using Python's built-in dictionary.
 ## Installation
 - Install Git, Python3.6+ and web browser (Google Chrome or Firefox).
 - Download this repository or run following command in the command prompt:
-> git clone https://github.com/Polymershot/Nxn-Matrix-Solver.git
+> git clone https://github.com/Polymershot/Simple-HashMap.git
 ## Usage/Test
 The class module gives an example of how to instantiate and add names to the Hashmap.
 ## Authors
