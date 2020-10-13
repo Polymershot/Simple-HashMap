@@ -6,7 +6,6 @@ class HashFunction:
 		self.arr = arr
 		HashFunction.people += len(arr)
 	def add(self):
-		alphabet = list(string.ascii_lowercase)
 		for i in self.arr:
 			temp = str(i[0])
 			hashvalue = alphabet.index(temp.lower())
@@ -21,9 +20,8 @@ class HashFunction:
 		print(HashFunction.people)
 
 	def delete(self,word):
-		i = str(word[0])
-		alphabet = list(string.ascii_lowercase)
-		hashvalue = alphabet.index(i.lower())
+		temp = str(word[0])
+		hashvalue = alphabet.index(temp.lower())
 		if isinstance(hashmap[hashvalue],list):
 			if word in hashmap[hashvalue]:
 				hashmap[hashvalue].remove(word)
@@ -33,9 +31,8 @@ class HashFunction:
 		print(hashmap)
 
 	def exist(self,word):
-		i = str(word[0])
-		alphabet = list(string.ascii_lowercase)
-		hashvalue = alphabet.index(i.lower())
+		temp = str(word[0])
+		hashvalue = alphabet.index(temp.lower())
 		if isinstance(hashmap[hashvalue],list):
 			if word in hashmap[hashvalue]:
 				print('The word is in slot ' + str(hashvalue))
@@ -52,6 +49,7 @@ if __name__ == "__main__":
 	hashmap = {}
 	for i in range(26):
 		hashmap[i] = None
+	alphabet = list(string.ascii_lowercase)
 	test = ['Jack','Jones','abby']
 	x = HashFunction(test)
 	x.add()
